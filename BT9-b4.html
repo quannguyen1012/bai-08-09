@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input placeholder="nhập sô thứ nhất" type="number" id="so-1">
+    <input placeholder="nhập sô thứ hai" type="number" id="so-2">
+    <input placeholder="nhập sô thứ ba" type="number" id="so-3">
+    <button type="button" onclick="kT()">kiểm tra</button>
+
+    <script>
+      function kT(){
+        let so1 = document.getElementById('so-1').value;
+        let so2 = document.getElementById('so-2').value;
+        let so3 = document.getElementById('so-3').value;
+
+        let kT = (so1 > so2 && so1 > so3)? 'số đầu tiên là số lớn nhất': (so2 > so3)?'số thứ hai lớn nhất': 'số thứ ba lớn nhất';
+        document.write(kT);
+      }
+
+    </script>
+
+</body>
+</html>

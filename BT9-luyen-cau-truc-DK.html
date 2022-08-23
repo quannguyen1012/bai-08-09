@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <input placeholder="nhập số a" type="number" id="soA">
+    <input placeholder="nhập số b" type="number" id="soB">
+    <button type="button" onclick="kiemTra()">kiểm tra</button>
+    <script>
+        function kiemTra() {
+            let a = document.getElementById('soA').value;
+            let b = document.getElementById('soB').value;
+            let kT = Number(a) % Number(b) == 0;
+            console.log(kT);
+            if (kT){
+                document.write('A chia hết cho B');
+            }else{
+                document.write('A không chia hết cho B');
+            }
+
+        }
+    </script>
+
+</body>
+</html>

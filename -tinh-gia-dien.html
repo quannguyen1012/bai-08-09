@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giá điện</title>
+
+</head>
+<body>
+      <input placeholder="nhập số Klw điện" type="number" id="dien">
+
+      <input type="button" onclick="kiemTra()" value="kiểm tra">
+
+      <script>
+          function kiemTra() {
+              let d = parseInt(document.getElementById('dien').value);
+
+              let giaDien = (d <= 50)?'1678':(d <= 100)?'1734':(d <= 200)?'2014':(d <= 300)?'2536':(d <= 400)?'2834':'2927';
+
+              document.write('giá điện hiện tại của bạn là: ' +  giaDien, '(VND/Klw)');
+          }
+      </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi</title>
+</head>
+<body>
+   <h2>chuyển mét sang Feet</h2>
+
+  <input placeholder="nhập mét" type="text" id="met"></br><br>
+  <button type="button" onclick="chuyenDoi()">Chuyển Đổi</button>
+
+  <script>
+    function chuyenDoi() {
+      let m = document.getElementById('met').value;
+      let F = Number(m) * 3.2808;
+      document.write(F + 'Feet');
+    }
+  </script>
+
+</body>
+</html>

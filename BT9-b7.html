@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cước thoại</title>
+
+</head>
+<body>
+    <input placeholder="nhập số phút gọi" type="number" id="phut">
+    <button type="button" onclick="cuoc()">Cước thoại</button>
+
+    <script>
+      function cuoc() {
+        let phutGoi = parseInt(document.getElementById('phut').value);
+        let a = phutGoi * 2000;
+        let b = phutGoi * 3000;
+        let c = phutGoi * 4000;
+
+        if (phutGoi > 100){
+          document.write('cước phí của bạn là: ' + c);
+        }else if (phutGoi > 50){
+          document.write('cước phí của bạn là: ' + b);
+        }else {
+          document.write('cước phí của bạn là: ' + a);
+        }
+
+      }
+    </script>
+
+</body>
+</html>

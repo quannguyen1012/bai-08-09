@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+      <input placeholder="nhập số nguyên bất kỳ" type="number" id="soN">
+      <button type="button" onclick="kT()">kiểm tra</button>
+      <p id="display"></p>
+
+      <script>
+          function kT() {
+              let so = document.getElementById('soN').value;
+
+              let message = (so > 0) ? 'số này lớn hơn 0' : 'sô này nhỏ hơn 0';
+              document.write('' + message);
+          }
+      </script>
+
+</body>
+</html>

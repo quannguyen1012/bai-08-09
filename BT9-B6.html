@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoa hồng</title>
+</head>
+<body>
+
+    <input placeholder="doanh số bán hàng" type="number" id="dSo">
+    <button type="button" onclick="hoaHong()">Hoa hồng</button>
+
+    <script>
+        function hoaHong() {
+            let dSo = document.getElementById('dSo').value;
+
+            let sanPham = (dSo >= 1000)?'hoa hồng nhận được là 10%': (dSo >= 100)?'hoa hồng nhận được là 7%':'hoa hồng nhận được là 5%';
+            document.write(sanPham);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <input placeholder="nhập tuổi" type="number" id="old">
+    <button type="button" onclick="tuoi()">Kiểm tra</button>
+
+    <script>
+        function tuoi() {
+            let tuoi = document.getElementById('old').value;
+
+            if (tuoi >= 15){
+              document.write('bạn đã đủ kiện để học lớp 10');
+            }else{
+              document.write('tuổi của bạn không đủ để học lớp 10');
+            }
+        }
+    </script>
+
+</body>
+</html>

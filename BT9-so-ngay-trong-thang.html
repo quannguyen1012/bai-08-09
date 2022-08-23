@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>số ngày trong tháng</title>
+</head>
+<body>
+    <h1>Kiểm tra số ngày trong tháng</h1>
+    <input type="number" id="month">
+    <button type="button" onclick="testDay()">check</button>
+    <p>hiển thị kết quả</p>
+
+    <script>
+        function testDay() {
+            let month = parseInt(document.getElementById('month').value);
+            console.log(month);
+            switch (month) {
+                case 1:
+                    document.write("tháng 1 có 31 ngày");
+                    break;
+                case 2:
+                    document.write("tháng 2 có 28 ngày hoặc 29 ngày");
+                    break;
+                case 3:
+                    document.write("tháng 1 có 31 ngày");
+                    break;
+                case 4:
+                    document.write("tháng 4 có 30 ngày");
+                    break;
+                case 5:
+                    document.write("tháng 5 có 31 ngày");
+                    break;
+                case 6:
+                    document.write("tháng 6 có 30 ngày");
+                    break;
+                case 7:
+                    document.write("tháng 7 có 31 ngày");
+                    break;
+                case 8:
+                    document.write("tháng 8 có 31 ngày");
+                    break;
+                case 9:
+                    document.write("tháng 9 có 30 ngày");
+                    break;
+                case 10:
+                    document.write("tháng 10 có 31 ngày");
+                    break;
+                case 11:
+                    document.write("tháng 11 có 30 ngày");
+                    break;
+                case 12:
+                    document.write("tháng 12 có 31 ngày");
+                    break;
+                default:
+                    document.write('nhập sai tháng rồi ba');
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>

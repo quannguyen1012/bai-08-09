@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+</head>
+<body>
+      <h2>Do you love me?</h2>
+      <button type="button" onclick="yes()" id="yes">  YES  </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" onclick="no()" onmouseover="chay()" id="no">  No  </button>
+
+      <script>
+          function chay() {
+
+              let oBj = null;
+              oBj = document.getElementById('no');
+              oBj.style.position = 'relative';
+              var x = Math.random() *window.screen.width ;
+              var y = Math.random() * window.screen.height;
+             // alert(x +" - " + y);
+              oBj.style.left = x + 'px';
+              oBj.style.top = y + 'px';
+
+
+          }
+      </script>
+</body>
+</html>

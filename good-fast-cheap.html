@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background: #f3f3f3;
+     }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        margin-left: 45%;
+    }
+    .container div {
+        padding-bottom: 30px;
+    }
+    input [tyle="checkbox"] {
+        width: 80px;
+        height: 40px;
+        appearance:  none;
+        background: #ccc;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        transition: 0.5s;
+    }
+    input:checked[type="checkbox"]{
+        background: #03a9f4;
+    }
+    input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 20px;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    input:checked[type="checkbox"]::before {
+        left: 40px;
+    }
+    
+
+</style>
+
+<body>
+    <div class="container">
+        <div>
+          <input type="checkbox"> <span>giàu</span>
+          <input type="checkbox"><span>Đẹp trai</span>
+          <input type="checkbox"><span>thông minh</span>
+        </div>
+    </div>
+</body>
+</html>
